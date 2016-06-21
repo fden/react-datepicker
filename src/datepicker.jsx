@@ -94,6 +94,9 @@ var DatePicker = React.createClass({
   },
 
   handleCalendarClickOutside (event) {
+    if (event instanceof TouchEvent) {
+      return
+    }
     this.setOpen(false)
   },
 
