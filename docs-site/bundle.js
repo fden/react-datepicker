@@ -35681,6 +35681,7 @@
 	  },
 	  handleCalendarClickOutside: function handleCalendarClickOutside(event) {
 	    if (event instanceof TouchEvent) {
+	      console.log('touch event');
 	      return;
 	    }
 	    this.setOpen(false);
